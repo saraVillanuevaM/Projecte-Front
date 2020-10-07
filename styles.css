@@ -1,107 +1,421 @@
-* {
+@media screen and (min-width: 900px) {
 
-  margin: 0;
-  padding: 0;
-  /*border: solid 1px black;*/
+  * {
 
-}
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px black;*/
 
-h3{
-font-size: 2em;
-
-}
-
-body {
-  background: white;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
   }
 
-a {
+  html{
+    width: 100%
+  }
+
+  h3{
+  font-size: 2em;
+
+  }
+
+  body {
+    background: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+  a {
+    color: black;
+    text-decoration: none;
+    }
+
+  li {
+    list-style: none;
+    }
+
+  p{ font-size: 14px;}
+
+  .container {
+      width: 100%;
+
+    }
+
+  /*NAVIGATION*/
+  .nav-main{
+    font-size: 17px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+  }
+  .nav-logo{
+    width: 250px;
+
+  }
+
+  /*NAV RIGHT*/
+  .nav-main ul{
+  margin-left: 10%;
+  text-align: left;
+
+  }
+
+  .nav-main ul li{
+  display: inline-block;
+  align-items: left;
+    padding: 10px;
+
+  }
+
+  .nav-menu li{
+    border-left: 1px solid #1e7dbe;
+  }
+  .nav-main ul li a:hover{
+  color: #af23cc;
+
+  }
+
+
+
+  /*SHOWCASE*/
+
+  .photoheadresponsive{
+    display: none;
+  }
+  .showcase{
+  width: 100%;
+  height: 500px;
+  background-image: url('img/hi-margaux-mainretocada copia.jpg');
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+
+  }
+  .showcase h2{
+    font-size: 3em;
+  }
+
+  .content{
+    background: rgba(255, 255, 255, .5);;
+    padding: 20px;
+    width: 40%;
+    height: 50%;
+    margin-left: 30px;
+
+  }
+  /*SUGERENCIAS Y FORMULARIO CAJAS*/
+
+  .secondlevel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /*SUGERENCIAS*/
+
+  .botonsuggestion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+    background-color: #15ff15;
+    border: 1px solid white;
+    width:150px;
+    height:40px;
+    padding: 5px;
+  }
+
+  .botonsuggestion a{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size:1em;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+
+  .botonsuggestion:hover{
+
+    background-color: black;
+  }
+
+
+  .sugerencias h3 {
+    font-size: 2em;
+    text-decoration:underline;
+    padding-bottom: 20px;
+  }
+  .sugerencias{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-evenly;
+    background-color: white;
+    margin: 2%;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    border: 5px solid #15ff15;
+
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #15ff15;
+    padding-top:10px;
+
+
+
+  }
+  .usertext {
+    width: 80%;
+
+  }
+  .userphoto{
+    width:15%;
+
+  }
+  .userpic{
+    width: 100%;
+  }
+
+
+  /*FORMULARIO*/
+
+
+  .formulario{
+    font-family: Montserrat;
+    background-color: white;
+    width: 50%;
+    margin: 2%;
+    padding: 20px;
+    height: 300px;
+    border: 5px solid #af23cc;
+
+
+  }
+
+  .formulario h3 {
+    font-size: 2em;
+    text-decoration:underline;
+    padding-bottom: 20px;
+  }
+
+
+  .locationtime{
+  padding: 5px;
+  margin: 5px;
+  border-bottom:1px solid #af23cc;
+  }
+
+  .formulario p{
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+
+  .formboton{
+  font-size: 1.1em;
+  width:150px;
+  height:50px;
+  background-color:#af23cc;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  border: 1px white;
+
+  }
+
+  .formboton:hover{
+    background-color: black;
+  }
+  /*SITEMAP*/
+
+  .sitemap{
+    height: 60px;
+    width: 100%;
+    background-color:#ff9966;
+
+
+  }
+
+  .sitemap ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .sitemap li{
+    font-size: 1.5em;
+    padding: 10px;
+
+  }
+  .sitemap a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+
+  /*footer*/
+  .foot-rss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:40px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+
+
+  }
+
+  .fab{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2em;
+    width: 50px;
+
+
+  }
+
+
+
+
+
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 900px) {
+
+  * {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+  align-items: center;}
+
+a{
   color: black;
   text-decoration: none;
+
+}
+  body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
   }
 
-li {
-  list-style: none;
-  }
-
-p{ font-size: 14px;}
-
-.container {
-    width: 90%;
-    margin: auto;
-
-  }
-
-/*NAVIGATION*/
-.nav-main{
-  font-size: 17px;
-  display:flex;
-  justify-content:space-between;
+  ul li{
+  display: flex;
+  text-align: center;
   align-items: center;
-  height: 60px;
-  padding: 20px 0;
-}
+  margin: 0;
+
+  }
+
+  h3{
+    font-size: 2em;
+  }
+  h2{
+  font-size: 2.5em;}
+
+  h5{ font-size: 1.5em;}
+/*NAVIGATION*/
+
 .nav-logo{
-  width: 250px;
-
+  width: 70%;
+  align-self: center;
 }
 
-/*NAV RIGHT*/
-.nav-main ul{
-margin-left: 10%;
-text-align: left;
-
+.nav-main a:hover{
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.nav-main ul li{
-display: inline-block;
-align-items: left;
-  padding: 10px;
-
-}
-
-.nav-menu li{
-  border-left: 1px solid #1e7dbe;
-}
-.nav-main ul li a:hover{
-color: #af23cc;
-
-}
-
-
-
-/*SHOWCASE*/
-.showcase{
-width: 100%;
-height: 500px;
-background-image: url('img/hi-margaux-mainretocada copia.jpg');
-padding-bottom: 10px;
+.nav-menu-right{
 display: flex;
-align-items: center;
+flex-direction: row;
+align-items: stretch;
+width: 100%;
+padding: 5px 0 10px 0;
+border-top: 2px solid black;
+border-bottom:2px solid black;
+}
+
+.nav-menu-right ul{
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;}
+
+.nav-menu-right li{
+  width: 100%;
+  padding: 10px 0 0 10px;
+  margin-left: 5px;
+  border-left: 1px solid black;
+
 
 }
-.showcase h2{
-  font-size: 3em;
-}
 
-.content{
-  background: rgba(255, 255, 255, .5);;
-  padding: 20px;
-  width: 40%;
-  height: 50%;
-  margin-left: 30px;
-  margin:
-}
-/*SUGERENCIAS Y FORMULARIO CAJAS*/
+title{display: none;}
 
 .secondlevel{
+  width: 100%;
+  display: block;
+}
+
+/*SHOWCASE*/
+
+.photoheadresponsive{
+background-image: url('img/hi-margaux-mainretocada copia.jpg');
+width:100%;
+}
+.fotohead{
+width: 100%;
+}
+
+
+.showcase p{
+  padding: 20px;
+  margin:20px;
+}
+
+.sitemap{
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
+}
+.sitemap ul{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+padding-left: 0px;
+
+
 }
 /*SUGERENCIAS*/
+
+.sugerencias{
+  background-color: #15ff15;
+  padding: 10px;
+}
+.userpic{
+width: 30%;
+height: 30%;
+
+}
+
+.user{
+padding-bottom: 20px;
+  border-bottom:15px solid white;
+}
 
 .botonsuggestion{
   display: flex;
@@ -120,7 +434,7 @@ align-items: center;
   font-weight: bold;
   font-size:1em;
   text-align: center;
-  color: white;
+  color: black;
   padding-top: 5px;
   margin-top: 5px;
 }
@@ -131,77 +445,19 @@ align-items: center;
 }
 
 
-.sugerencias h3 {
-  font-size: 2em;
-  text-decoration:underline;
-  padding-bottom: 20px;
-}
-.sugerencias{
-  display: flex;
-  flex-direction: column;
-justify-content: space-evenly;
-  background-color: white;
-  margin: 2%;
-  width: 50%;
-  padding: 20px;
-  height: 300px;
-  border: 5px solid #15ff15;
-
-}
-
-.user {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #15ff15;
-  padding-top:10px;
-
-
-
-}
-.usertext {
-  width: 80%;
-
-}
-.userphoto{
-  width:15%;
-
-}
-.userpic{
-  width: 100%;
-}
-
-
 /*FORMULARIO*/
-
-
 .formulario{
-  font-family: Montserrat;
-  background-color: white;
-  width: 50%;
-  margin: 2%;
-  padding: 20px;
-  height: 300px;
-  border: 5px solid #af23cc;
+border: 5px solid #af23cc;
+padding: 10px;
+margin: 20px;}
 
+.user{border: 5px solid white;
+padding: 20px;
+margin: 20px;}
 
-}
-
-.formulario h3 {
-  font-size: 2em;
-  text-decoration:underline;
-  padding-bottom: 20px;
-}
-
-
-.locationtime{
-padding: 5px;
-margin: 5px;
-border-bottom:1px solid #af23cc;
-}
-
-.formulario p{
-  padding: 5px;
-  margin: 5px;
+input{
+  border: 2px solid black;
+  height: 30px;
 }
 
 .items{
@@ -210,69 +466,75 @@ border-bottom:1px solid #af23cc;
   justify-content: flex-start;
 }
 
-
 .formboton{
-font-size: 1.1em;
-width:150px;
-height:50px;
-background-color:#af23cc;
-color: white;
-font-family: Montserrat;
-font-weight: bold;
-border: 1px white;
-
-}
-
-.formboton:hover{
-  background-color: black;
-}
-/*SITEMAP*/
-
-.sitemap{
-  height: 60px;
-  width: 100%;
-  background-color:#ff9966;
-
-
-}
-
-.sitemap ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 5px;
+  background-color: #af23cc;
+  border: 1px solid white;
+  font-weight: bold;
+  color: white;
+  width:150px;
+  height:40px;
+  padding: 5px;
 
 }
-.sitemap li{
-  font-size: 1.5em;
+.formboton p{
+font-family: Montserrat;
+font-weight: bold;
+font-size:1em;
+text-align: center;
+color: white;
+padding-top: 5px;
+margin-top: 5px;
+}
+
+.formboton:hover{
+  background-color: black
+  color:white;
+}
+
+/*SITEMAP*/
+.sitemap{
+display:flex;
+flex-direction: column;
+align-items: center;
+font-size: 2em;
+background-color:#ff9966;
+
+}
+
+.sitemap a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/*footer*/
+.footer-rss{
+ width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.foot-rss a{
+  font-size:10px;
+  padding: 0px;
+  color: white;
+font-size: 1em;
   padding: 10px;
 
 }
-.sitemap a:hover {
-  color: black;
-  text-decoration: underline;
-}
 
-
-/*footer*/
-.foot-rss{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding:40px;
-  color: white;
-  width: 100%;
-  height: 60px;
-  background-color: black;
-
-
-}
-
-.fab{
-  display: flex;
-  flex-direction: row;
-  color: white;
-  font-size: 2em;
-  width: 50px;
-
+footer{
+color: white;
+background-color: black;
+width: 100%;
+padding: 0px;
+margin: 0px;
 
 }
